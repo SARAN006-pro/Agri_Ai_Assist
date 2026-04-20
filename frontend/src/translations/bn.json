@@ -1,0 +1,88 @@
+{
+  "app": { "name": "স্মার্টফার্ম AI", "tagline": "আপনার AI-চালিত কৃষি সহায়ক" },
+  "nav": {
+    "dashboard": "ড্যাশবোর্ড", "chat": "AI চ্যাট", "recommend": "ফসল উপদেষ্টা", "analytics": "ডকুমেন্ট Q&A",
+    "market": "বাজার মূল্য", "calendar": "ফসল ক্যালেন্ডার", "irrigation": "সেচ", "economics": "অর্থনীতি",
+    "records": "রেকর্ড", "sensors": "সেন্সর", "farm": "খামার প্রোফাইল", "settings": "সেটিংস"
+  },
+  "common": {
+    "loading": "লোড হচ্ছে...", "error": "ত্রুটি", "save": "সংরক্ষণ", "cancel": "বাতিল", "delete": "মুছুন",
+    "edit": "সম্পাদনা", "add": "যোগ করুন", "search": "অনুসন্ধান", "filter": "ফিল্টার", "export": "রপ্তানি",
+    "submit": "জমা দিন", "close": "বন্ধ", "confirm": "নিশ্চিত", "yes": "হ্যাঁ", "no": "না", "back": "পিছনে", "next": "পরবর্তী", "done": "সম্পন্ন"
+  },
+  "dashboard": {
+    "title": "ড্যাশবোর্ড", "subtitle": "আপনার খামার কার্যকলাপের ওভারভিউ",
+    "totalChats": "মোট চ্যাট", "predictions": "পূর্বাভাস", "uploads": "আপলোড",
+    "recentActivity": "সাম্প্রতিক কার্যকলাপ", "knowledgeBase": "জ্ঞান ভিত্তি", "welcomeMessage": "স্মার্টফার্ম AI তে স্বাগতম"
+  },
+  "chat": {
+    "title": "AI সহায়ক", "placeholder": "খামার সম্পর্কে জিজ্ঞাসা করুন...", "send": "পাঠান", "speaking": "বলছে...", "listening": "শুনছে...",
+    "micOn": "ভয়েস ইনপুট চালু", "micOff": "ভয়েস ইনপুট বন্ধ", "speakerOn": "জোরে পড়া চালু", "speakerOff": "জোরে পড়া বন্ধ",
+    "newChat": "নতুন চ্যাট", "sessionName": "সেশনের নাম", "createSession": "সেশন তৈরি", "deleteSession": "সেশন মুছুন",
+    "exportChat": "চ্যাট রপ্তানি", "generalChat": "সাধারণ চ্যাট", "docQa": "ডকুমেন্ট Q&A", "clearHistory": "ইতিহাস মুছুন", "typeOrSpeak": "আপনার প্রশ্ন টাইপ করুন বা বলুন"
+  },
+  "recommend": {
+    "title": "ফসল উপদেষ্টা", "subtitle": "আপনার পরিস্থিতি অনুযায়ী ফসল সুপারিশ পান",
+    "nitrogen": "নাইট্রোজেন (N)", "phosphorus": "ফসফরাস (P)", "potassium": "পটাশিয়াম (K)",
+    "temperature": "তাপমাত্রা (°C)", "humidity": "আর্দ্রতা (%)", "ph": "মাটির pH", "rainfall": "বৃষ্টিপাত (mm)",
+    "getRecommendation": "সুপারিশ পান", "recommendedCrop": "সুপারিশকৃত ফসল", "confidence": "বিশ্বাসযোগ্যতা",
+    "reason": "কেন এই ফসল", "alternatives": "বিকল্প ফসল", "predictYield": "উৎপাদন অনুমান",
+    "area": "ক্ষেত্রফল (হেক্টর)", "fertilizer": "সার (kg)", "pesticide": "কীটনাশক (kg)",
+    "rainfallAnnual": "বার্ষিক বৃষ্টিপাত (mm)", "predictedYield": "পূর্বাভাসিত উৎপাদন", "totalProduction": "মোট উৎপাদন"
+  },
+  "analytics": {
+    "title": "ডকুমেন্ট Q&A", "subtitle": "কৃষি গাইড আপলোড করুন এবং প্রশ্ন করুন",
+    "uploadDoc": "ডকুমেন্ট আপলোড", "dragDrop": "PDF বা TXT ফাইল এখানে টানুন",
+    "orBrowse": "অথবা ফাইল ব্রাউজ করুন", "indexedChunks": "ইনডেক্সড চাঙ্ক", "askQuestion": "প্রশ্ন করুন",
+    "question": "আপনার প্রশ্ন", "getAnswer": "উত্তর পান", "sources": "উৎস", "noDocs": "এখনও কোনো ডকুমেন্ট আপলোড হয়নি", "resetIndex": "ইনডেক্স রিসেট"
+  },
+  "market": {
+    "title": "বাজার মূল্য", "subtitle": "বাজারে সর্বশেষ মূল্য", "crop": "ফসল", "wholesale": "পাইকারি", "retail": "খুচরা",
+    "farmGate": "খামার গেট", "filterCrop": "ফসল দিয়ে ফিল্টার", "allCrops": "সব ফসল", "pricePerKg": "প্রতি কেজি মূল্য"
+  },
+  "calendar": {
+    "title": "ফসল ক্যালেন্ডার", "subtitle": "রোপণ এবং ফসল কাটার সময়সূচী",
+    "planting": "রোপণ", "harvesting": "ফসল কাটা", "growing": "বাড়ছে", "offSeason": "অফ সিজন", "duration": "সময়কাল", "climateZone": "জলবায়ু অঞ্চল"
+  },
+  "irrigation": {
+    "title": "সেচ উপদেষ্টা", "subtitle": "জল ব্যবস্থাপনা সুপারিশ", "soilMoisture": "মাটির আর্দ্রতা (%)",
+    "crop": "ফসল প্রকার", "temperature": "তাপমাত্রা (°C)", "humidity": "আর্দ্রতা (%)",
+    "getAdvice": "পরামর্শ পান", "recommendedAction": "সুপারিশকৃত পদক্ষেপ", "urgency": "জরুরিতা",
+    "urgencyHigh": "উচ্চ", "urgencyMedium": "মাঝারি", "urgencyLow": "কম", "irrigationLogs": "সেচ লগ", "waterVolume": "পানির পরিমাণ"
+  },
+  "economics": {
+    "title": "লাভ ক্যালকুলেটর", "subtitle": "আপনার খামার মার্জিন গণনা করুন", "cropType": "ফসল প্রকার", "areaHa": "ক্ষেত্রফল (হেক্টর)",
+    "fertilizerCost": "সার খরচ", "pesticideCost": "কীটনাশক খরচ", "laborCost": "শ্রম খরচ",
+    "expectedYield": "প্রত্যাশিত উৎপাদন (kg)", "pricePerKg": "প্রতি কেজি মূল্য", "calculate": "গণনা করুন",
+    "totalCost": "মোট খরচ", "totalRevenue": "মোট আয়", "profitMargin": "লাভ মার্জিন", "costBreakdown": "খরচ বিভাজন"
+  },
+  "records": {
+    "title": "উৎপাদন রেকর্ড", "subtitle": "আপনার ফসল ইতিহাস ট্র্যাক করুন", "addRecord": "রেকর্ড যোগ করুন",
+    "crop": "ফসল", "year": "বছর", "yieldKgHa": "উৎপাদন (kg/ha)", "areaHa": "ক্ষেত্রফল (ha)",
+    "notes": "নোট", "saveRecord": "রেকর্ড সংরক্ষণ", "harvestHistory": "ফসল ইতিহাস", "trendChart": "উৎপাদন প্রবণতা"
+  },
+  "sensors": {
+    "title": "সেন্সর ড্যাশবোর্ড", "subtitle": "IoT সেন্সর রিডিং এবং অ্যালার্ট", "webhookUrl": "ওয়েবহুক URL",
+    "copyUrl": "URL কপি", "sendReading": "রিডিং পাঠান", "sensorType": "সেন্সর প্রকার", "value": "মান",
+    "unit": "ইউনিট", "timestamp": "সময়", "recommendedAction": "সুপারিশকৃত পদক্ষেপ", "recentReadings": "সাম্প্রতিক রিডিং"
+  },
+  "farm": {
+    "title": "খামার প্রোফাইল", "subtitle": "আপনার খামার তথ্য পরিচালনা করুন", "farmName": "খামারের নাম",
+    "location": "অবস্থান", "soilType": "মাটির ধরন", "acreage": "ক্ষেত্রফল", "cropsGrown": "চাষ করা ফসল",
+    "createProfile": "প্রোফাইল তৈরি", "updateProfile": "প্রোফাইল আপডেট", "deleteProfile": "প্রোফাইল মুছুন"
+  },
+  "settings": {
+    "title": "সেটিংস", "subtitle": "কনফিগারেশন এবং স্থিতি", "backendUrl": "ব্যাকএন্ড URL", "llmModel": "LLM মডেল",
+    "apiKeyStatus": "API কী স্থিতি", "configured": "কনফিগার করা", "notConfigured": "কনফিগার করা হয়নি",
+    "ragStatus": "RAG স্থিতি", "mlModels": "ML মডেল", "storagePaths": "স্টোরেজ পাথ", "usageStats": "ব্যবহার পরিসংখ্যান",
+    "resetRagIndex": "RAG ইনডেক্স রিসেট", "clearChatHistory": "চ্যাট ইতিহাস মুছুন"
+  },
+  "landing": {
+    "heroTitle": "স্মার্টফার্ম AI", "heroSubtitle": "আপনার বুদ্ধিমান খামার সঙ্গী", "getStarted": "শুরু করুন", "features": "বৈশিষ্ট্য",
+    "aiChat": "AI-চালিত চ্যাট সহায়ক", "cropAdvisor": "স্মার্ট ফসল সুপারিশ", "yieldPrediction": "সঠিক উৎপাদন পূর্বাভাস",
+    "documentQA": "RAG দিয়ে ডকুমেন্ট Q&A", "marketPrices": "রিয়েল-টাইম বাজার মূল্য", "irrigationAdvice": "স্মার্ট সেচ ব্যবস্থাপনা"
+  },
+  "voice": {
+    "tapToSpeak": "বলতে ট্যাপ করুন", "speaking": "বলছে...", "listening": "শুনছে...", "micError": "মাইক্রোফোন অ্যাক্সেস অস্বীকৃত", "speechNotSupported": "এই ব্রাউজারে স্পিচ সমর্থিত নয়"
+  }
+}

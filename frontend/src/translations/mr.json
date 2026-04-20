@@ -1,0 +1,87 @@
+{
+  "app": { "name": "स्मार्टफार्म AI", "tagline": "तुमचा AI-संचालित शेती सहाय्यक" },
+  "nav": {
+    "dashboard": "डॅशबोर्ड", "chat": "AI चॅट", "recommend": "पीक सल्लागार", "analytics": "दस्तऐवज Q&A",
+    "market": "बाजारभाव", "calendar": "पीक कॅलेंडर", "irrigation": "सिंचाई", "economics": "अर्थशास्त्र",
+    "records": "रेकॉर्ड्स", "sensors": "संवेदक", "farm": "शेत प्रोफाइल", "settings": "सेटिंग्ज"
+  },
+  "common": {
+    "loading": "लोड होत आहे...", "error": "त्रुटी", "save": "जतन", "cancel": "रद्द", "delete": "हटवा",
+    "edit": "संपादित करा", "add": "जोडा", "search": "शोधा", "filter": "फिल्टर", "export": "निर्यात",
+    "submit": "सबमिट", "close": "बंद", "confirm": "पुष्टी", "yes": "होय", "no": "नाही", "back": "मागे", "next": "पुढे", "done": "पूर्ण"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड", "subtitle": "तुमच्या शेत कार्याचे विहंगावलोकन",
+    "totalChats": "एकूण चॅट", "predictions": "अंदाज", "uploads": "अपलोड",
+    "recentActivity": "अलीकडील कार्य", "knowledgeBase": "ज्ञान आधार", "welcomeMessage": "स्मार्टफार्म AI मध्ये स्वागत आहे"
+  },
+  "chat": {
+    "title": "AI सहाय्यक", "placeholder": "शेती विषयी विचारा...", "send": "पाठवा", "speaking": "बोलत आहे...", "listening": "ऐकत आहे...",
+    "micOn": "व्हॉइस इनपुट चालू", "micOff": "व्हॉइस इनपुट बंद", "speakerOn": "वाचून दाखवा चालू", "speakerOff": "वाचून दाखवा बंद",
+    "newChat": "नवीन चॅट", "sessionName": "सत्र नाव", "createSession": "सत्र तयार करा", "deleteSession": "सत्र हटवा",
+    "exportChat": "चॅट निर्यात", "generalChat": "सामान्य चॅट", "docQa": "दस्तऐवज Q&A", "clearHistory": "इतिहास साफ करा", "typeOrSpeak": "तुमचा प्रश्न टाइप करा किंवा बोला"
+  },
+  "recommend": {
+    "title": "पीक सल्लागार", "subtitle": "तुमच्या परिस्थितीनुसार पीक शिफारसी मिळवा",
+    "nitrogen": "नायट्रोजन (N)", "phosphorus": "फॉस्फरस (P)", "potassium": "पोटॅशियम (K)",
+    "temperature": "तापमान (°C)", "humidity": "आर्द्रता (%)", "ph": "माती pH", "rainfall": "पाऊस (mm)",
+    "getRecommendation": "शिफारस मिळवा", "recommendedCrop": "शिफारस केलेले पीक", "confidence": "विश्वास",
+    "reason": "हे पीक का", "alternatives": "पर्यायी पिके", "predictYield": "उत्पादन अंदाज",
+    "area": "क्षेत्र (हेक्टर)", "fertilizer": "खाद्य (kg)", "pesticide": "कीटकनाशक (kg)",
+    "rainfallAnnual": "वार्षिक पाऊस (mm)", "predictedYield": "अंदाजित उत्पादन", "totalProduction": "एकूण उत्पादन"
+  },
+  "analytics": {
+    "title": "दस्तऐवज Q&A", "subtitle": "शेती मार्गदर्शिका अपलोड करा आणि प्रश्न विचारा",
+    "uploadDoc": "दस्तऐवज अपलोड", "dragDrop": "PDF किंवा TXT फाइल येथे ड्रॅग करा",
+    "orBrowse": "किंवा फाइल ब्राउझ करा", "indexedChunks": "अनुक्रमित केलेले तुकडे", "askQuestion": "प्रश्न विचारा",
+    "question": "तुमचा प्रश्न", "getAnswer": "उत्तर मिळवा", "sources": "स्रोत", "noDocs": "अजून कोणतेही दस्तऐवज अपलोड केले नाहीत", "resetIndex": "अनुक्रमणिका रीसेट करा"
+  },
+  "market": {
+    "title": "बाजारभाव", "subtitle": "बाजारातील ताज्या भाव", "crop": "पीक", "wholesale": "wholesale", "retail": "किरकोळ",
+    "farmGate": "शेत गेट", "filterCrop": "पीकानुसार फिल्टर", "allCrops": "सर्व पिके", "pricePerKg": "किलोभाव"
+  },
+  "calendar": {
+    "title": "पीक कॅलेंडर", "subtitle": "लागवड आणि कापणी वेळापत्रक", "planting": "लागवड", "harvesting": "कापणी", "growing": "वाढत", "offSeason": "off season", "duration": "कालावधी", "climateZone": "हवामान विभाग"
+  },
+  "irrigation": {
+    "title": "सिंचाई सल्लागार", "subtitle": "पाणी व्यवस्थापन शिफारशी", "soilMoisture": "माती ओलावा (%)",
+    "crop": "पीक प्रकार", "temperature": "तापमान (°C)", "humidity": "आर्द्रता (%)",
+    "getAdvice": "सल्ला मिळवा", "recommendedAction": "शिफारस केलेली कृती", "urgency": "तातडी",
+    "urgencyHigh": "उच्च", "urgencyMedium": "मध्यम", "urgencyLow": "कमी", "irrigationLogs": "सिंचाई नोंदी", "waterVolume": "पाणी प्रमाण"
+  },
+  "economics": {
+    "title": "नफा कॅल्क्युलेटर", "subtitle": "तुमच्या शेती marjin गणना करा", "cropType": "पीक प्रकार", "areaHa": "क्षेत्र (हेक्टर)",
+    "fertilizerCost": "खाद्य खर्च", "pesticideCost": "कीटकनाशक खर्च", "laborCost": "श्रम खर्च",
+    "expectedYield": "अपेक्षित उत्पादन (kg)", "pricePerKg": "किलोभाव", "calculate": "गणना करा",
+    "totalCost": "एकूण खर्च", "totalRevenue": "एकूण उत्पन्न", "profitMargin": "नफा marjin", "costBreakdown": "खर्च विभाजन"
+  },
+  "records": {
+    "title": "उत्पादन रेकॉर्ड्स", "subtitle": "तुमच्या कापणी इतिहास ट्रॅक करा", "addRecord": "रेकॉर्ड जोडा",
+    "crop": "पीक", "year": "वर्ष", "yieldKgHa": "उत्पादन (kg/ha)", "areaHa": "क्षेत्र (ha)",
+    "notes": "नोट्स", "saveRecord": "रेकॉर्ड जतन करा", "harvestHistory": "कापणी इतिहास", "trendChart": "उत्पादन प्रवृत्ती"
+  },
+  "sensors": {
+    "title": "संवेदक डॅशबोर्ड", "subtitle": "IoT संवेदक वाचन आणि अलर्ट", "webhookUrl": "Webhook URL",
+    "copyUrl": "URL कॉपी", "sendReading": "वाचन पाठवा", "sensorType": "संवेदक प्रकार", "value": "मूल्य",
+    "unit": "युनिट", "timestamp": "टाइमस्टँप", "recommendedAction": "शिफारस केलेली कृती", "recentReadings": "अलीकडील वाचन"
+  },
+  "farm": {
+    "title": "शेत प्रोफाइल", "subtitle": "तुमच्या शेत माहितीचे व्यवस्थापन करा", "farmName": "शेताचे नाव",
+    "location": "स्थान", "soilType": "माती प्रकार", "acreage": "क्षेत्रफळ", "cropsGrown": "पेरलेली पिके",
+    "createProfile": "प्रोफाइल तयार करा", "updateProfile": "प्रोफाइल अपडेट करा", "deleteProfile": "प्रोफाइल हटवा"
+  },
+  "settings": {
+    "title": "सेटिंग्ज", "subtitle": "कॉन्फिगरेशन आणि स्थिती", "backendUrl": "बॅकएंड URL", "llmModel": "LLM मॉडेल",
+    "apiKeyStatus": "API की स्थिती", "configured": "कॉन्फिगर केले", "notConfigured": "कॉन्फिगर केले नाही",
+    "ragStatus": "RAG स्थिती", "mlModels": "ML मॉडेल्स", "storagePaths": "स्टोरेज पथ", "usageStats": "वापर आकडे",
+    "resetRagIndex": "RAG अनुक्रमणिका रीसेट करा", "clearChatHistory": "चॅट इतिहास साफ करा"
+  },
+  "landing": {
+    "heroTitle": "स्मार्टफार्म AI", "heroSubtitle": "तुमचा स्मार्ट शेती सहाय्यक", "getStarted": "सुरू करा", "features": "वैशिष्ट्ये",
+    "aiChat": "AI-संचालित चॅट सहाय्यक", "cropAdvisor": "स्मार्ट पीक शिफारशी", "yieldPrediction": "अचूक उत्पादन अंदाज",
+    "documentQA": "RAG सह दस्तऐवज Q&A", "marketPrices": "रिअल-टाइम बाजारभाव", "irrigationAdvice": "स्मार्ट सिंचाई व्यवस्थापन"
+  },
+  "voice": {
+    "tapToSpeak": "बोलण्यासाठी टॅप करा", "speaking": "बोलत आहे...", "listening": "ऐकत आहे...", "micError": "मायक्रोफोन प्रवेश नाकारला", "speechNotSupported": "या ब्राउझरमध्ये स्पीच समर्थित नाही"
+  }
+}

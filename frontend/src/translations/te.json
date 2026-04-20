@@ -1,0 +1,87 @@
+{
+  "app": { "name": "స్మార్ట్‌ఫార్మ్ AI", "tagline": "మీ AI-ఆధారిత వ్యవసాయ సహాయకుడు" },
+  "nav": {
+    "dashboard": "డాష్‌బోర్డ్", "chat": "AI చాట్", "recommend": "పంట సలహాదారు", "analytics": "డాక్యుమెంట్ Q&A",
+    "market": "మార్కెట్ ధరలు", "calendar": "పంట క్యాలెండర్", "irrigation": "నీటి పారుదల", "economics": "ఆర్థికశాస్త్రం",
+    "records": "రికార్డులు", "sensors": "సెన్సార్లు", "farm": "ఫార్మ్ ప్రొఫైల్", "settings": "సెట్టింగులు"
+  },
+  "common": {
+    "loading": "లోడ్ అవుతోంది...", "error": "లోపం", "save": "సేవ్", "cancel": "రద్దు", "delete": "తొలగించు",
+    "edit": "సవరించు", "add": "జోడించు", "search": "వెతుకు", "filter": "ఫిల్టర్", "export": "ఎగుమతి",
+    "submit": "సబ్మిట్", "close": "మూసివేయు", "confirm": "నిర్ధారించు", "yes": "అవును", "no": "కాదు", "back": "వెనుక", "next": "తదుపరి", "done": "పూర్తయింది"
+  },
+  "dashboard": {
+    "title": "డాష్‌బోర్డ్", "subtitle": "మీ ఫార్మ్ కార్యకలాపాల అవలోకనం",
+    "totalChats": "మొత్తం చాట్‌లు", "predictions": "అంచనాలు", "uploads": "అప్‌లోడ్‌లు",
+    "recentActivity": "ఇటీవల కార్యకలాపం", "knowledgeBase": "జ్ఞానబేస్", "welcomeMessage": "స్మార్ట్‌ఫార్మ్ AI కు స్వాగతం!"
+  },
+  "chat": {
+    "title": "AI సహాయకుడు", "placeholder": "వ్యవసాయం గురించి అడిగి...", "send": "పంపు", "speaking": "మాట్లాడుతోంది...", "listening": "వింటోంది...",
+    "micOn": "వాయిస్ ఇన్‌పుట్ ఆన్", "micOff": "వాయిస్ ఇన్‌పుట్ ఆఫ్", "speakerOn": "వినిపించు ఆన్", "speakerOff": "వినిపించు ఆఫ్",
+    "newChat": "కొత్త చాట్", "sessionName": "సెషన్ పేరు", "createSession": "సెషన్ సృష్టించు", "deleteSession": "సెషన్ తొలగించు",
+    "exportChat": "చాట్ ఎగుమతి", "generalChat": "సాధారణ చాట్", "docQa": "డాక్యుమెంట్ Q&A", "clearHistory": "చరిత్ర తొలగించు", "typeOrSpeak": "మీ ప్రశ్న టైప్ చేయండి లేదా మాట్లాడండి"
+  },
+  "recommend": {
+    "title": "పంట సలహాదారు", "subtitle": "మీ పరిస్థితుల ఆధారంగా పంట సిఫార్సులు పొందండి",
+    "nitrogen": "నైట్రోజన్ (N)", "phosphorus": "ఫాస్ఫరస్ (P)", "potassium": "పోటాషియం (K)",
+    "temperature": "తాపమానం (°C)", "humidity": "ఆర్ద్రత (%)", "ph": "నేల pH", "rainfall": "వర్షపాతం (mm)",
+    "getRecommendation": "సిఫార్సు పొందండి", "recommendedCrop": "సిఫార్సు చేసిన పంట", "confidence": "విశ్వాసం",
+    "reason": "ఎందుకు ఈ పంట", "alternatives": "ప్రత్యామ్నాక పంటలు", "predictYield": "ఉత్పత్తి అంచనా",
+    "area": "విస్తీర్ణం (హెక్టార్లు)", "fertilizer": "ఎరువు (kg)", "pesticide": "కీటనాశని (kg)",
+    "rainfallAnnual": "సంవత్సర వర్షపాతం (mm)", "predictedYield": "అంచనా ఉత్పత్తి", "totalProduction": "మొత్తం ఉత్పత్తి"
+  },
+  "analytics": {
+    "title": "డాక్యుమెంట్ Q&A", "subtitle": "వ్యవసాయ గైడ్‌లను అప్‌లోడ్ చేయండి మరియు ప్రశ्नలు అడగండి",
+    "uploadDoc": "డాక్యుమెంట్ అప్‌లోడ్", "dragDrop": "PDF లేదా TXT ఫైల్‌ను ఇక్కడ డ్రాగ్ చేయండి",
+    "orBrowse": "లేదా ఫైల్‌లను బ్రౌజ్ చేయండి", "indexedChunks": "ఇండెక్స్ చేయబడిన చంక్‌లు", "askQuestion": "ప్రశ्न అడగండి",
+    "question": "మీ ప్రశ्न", "getAnswer": "సమాధానం పొందండి", "sources": "మూలాలు", "noDocs": "ఇంకా డాక్యుమెంట్లు అప్‌లోడ్ చేయబడలేదు", "resetIndex": "ఇండెక్స్ రీసెట్"
+  },
+  "market": {
+    "title": "మార్కెట్ ధరలు", "subtitle": "మార్కెట్లలో తాజా ధరలు", "crop": "పంట", "wholesale": "పలుబేర", "retail": "స్థూల",
+    "farmGate": "ఫార్మ్ గేట్", "filterCrop": "పంట ద్వారా ఫిల్టర్", "allCrops": "అన్ని పంటలు", "pricePerKg": "కిలో ధర"
+  },
+  "calendar": {
+    "title": "పంట క్యాలెండర్", "subtitle": "నాటడం మరియు కోత షెడ్యూల్", "planting": "నాటడం", "harvesting": "కోత", "growing": "పెరుగుతోంది", "offSeason": "ఆఫ్ సీజన్", "duration": "వ్యవధి", "climateZone": "వాతావరణ మండలం"
+  },
+  "irrigation": {
+    "title": "నీటి పారుదల సలహాదారు", "subtitle": "నీటి నిర్వహణ సిఫార్సులు", "soilMoisture": "నేల తేమ (%)",
+    "crop": "పంట రకం", "temperature": "తాపమానం (°C)", "humidity": "ఆర్ద్రత (%)",
+    "getAdvice": "సలహా పొందండి", "recommendedAction": "సిఫార్సు చేసిన చర్య", "urgency": "అత్యవసరత",
+    "urgencyHigh": "అధిక", "urgencyMedium": "మధ్యమ", "urgencyLow": "తక్కువ", "irrigationLogs": "నీటి పారుదల లాగ్‌లు", "waterVolume": "నీటి పరిమాణం"
+  },
+  "economics": {
+    "title": "లాభ కాలిక్యులేటర్", "subtitle": "మీ వ్యవసాయ marjin లెక్కించండి", "cropType": "పంట రకం", "areaHa": "విస్తీర్ణం (హెక్టార్లు)",
+    "fertilizerCost": "ఎరువు ఖర్చు", "pesticideCost": "కీటనాశని ఖర్చు", "laborCost": "తదన ఖర్చు",
+    "expectedYield": "అంచనా ఉత్పత్తి (kg)", "pricePerKg": "కిలో ధర", "calculate": "లెక్కించు",
+    "totalCost": "మొత్తం ఖర్చు", "totalRevenue": "మొత్తం ఆదాయం", "profitMargin": "లాభ marjin", "costBreakdown": "ఖర్చు వివరాలు"
+  },
+  "records": {
+    "title": "ఉత్పత్తి రికార్డులు", "subtitle": "మీ కోత చరిత్రను ట్రాక్ చేయండి", "addRecord": "రికార్డ్ జోడించు",
+    "crop": "పంట", "year": "సంవత్సరం", "yieldKgHa": "ఉత్పత్తి (kg/ha)", "areaHa": "విస్తీర్ణం (ha)",
+    "notes": "గమనికలు", "saveRecord": "రికార్డ్ సేవ్", "harvestHistory": "కోత చరిత్ర", "trendChart": "ఉత్పత్తి పోకడ"
+  },
+  "sensors": {
+    "title": "సెన్సార్ డాష్‌బోర్డ్", "subtitle": "IoT సెన్సార్ రీడింగ్‌లు మరియు అలర్ట్‌లు", "webhookUrl": "Webhook URL",
+    "copyUrl": "URL కాపీ", "sendReading": "రీడింగ్ పంపు", "sensorType": "సెన్సార్ రకం", "value": "విలువ",
+    "unit": "యూనిట్", "timestamp": "టైమ్‌స్ట్యాంప్", "recommendedAction": "సిఫార్సు చేసిన చర్య", "recentReadings": "ఇటీవలి రీడింగ్‌లు"
+  },
+  "farm": {
+    "title": "ఫార్మ్ ప్రొఫైల్", "subtitle": "మీ ఫార్మ్ సమాచారం నిర్వహించండి", "farmName": "ఫార్మ్ పేరు",
+    "location": "లొకేషన్", "soilType": "నేల రకం", "acreage": "విస్తీర్ణం", "cropsGrown": "పండించే పంటలు",
+    "createProfile": "ప్రొఫైల్ సృష్టించు", "updateProfile": "ప్రొఫైల్ అప్‌డేట్", "deleteProfile": "ప్రొఫైల్ తొలగించు"
+  },
+  "settings": {
+    "title": "సెట్టింగులు", "subtitle": "కాన్ఫిగరేషన్ మరియు స్థితి", "backendUrl": "బ్యాక్‌ఎండ్ URL", "llmModel": "LLM మోడల్",
+    "apiKeyStatus": "API కీ స్థితి", "configured": "కాన్ఫిగర్ చేయబడింది", "notConfigured": "కాన్ఫిగర్ చేయబడలేదు",
+    "ragStatus": "RAG స్థితి", "mlModels": "ML మోడల్‌లు", "storagePaths": "స్టోరేజ్ పాత్‌లు", "usageStats": "ఉపయోగం గణాంకాలు",
+    "resetRagIndex": "RAG ఇండెక్స్ రీసెట్", "clearChatHistory": "చాట్ చరిత్ర తొలగించు"
+  },
+  "landing": {
+    "heroTitle": "స్మార్ట్‌ఫార్మ్ AI", "heroSubtitle": "మీ స్మార్ట్ ఫార్మింగ్ భాగస్వామి", "getStarted": "ప్రారంభించు", "features": "లక్షణాలు",
+    "aiChat": "AI-ఆధారిత చాట్ సహాయకుడు", "cropAdvisor": "స్మార్ట్ పంట సిఫార్సులు", "yieldPrediction": "ఖచ్ఛితమైన ఉత్పత్తి అంచనాలు",
+    "documentQA": "RAGతో డాక్యుమెంట్ Q&A", "marketPrices": "రియల్‌టైమ్ మార్కెట్ ధరలు", "irrigationAdvice": "స్మార్ట్ నీటి పారుదల నిర్వహణ"
+  },
+  "voice": {
+    "tapToSpeak": "మాట్లాడడానికి ట్యాప్ చేయండి", "speaking": "మాట్లాడుతోంది...", "listening": "వింటోంది...", "micError": "మైక్రోఫోన్ యాక్సెస్ నిరాకరించబడింది", "speechNotSupported": "ఈ బ్రౌజర్‌లో స్పీచ్ సపోర్టెడ్ కాదు"
+  }
+}

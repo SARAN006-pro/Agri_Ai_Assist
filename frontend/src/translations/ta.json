@@ -1,0 +1,87 @@
+{
+  "app": { "name": "ஸ்மார்ட்ஃபார்ம் AI", "tagline": "உங்கள் AI-இயக்கும் விவசாய உதவியாளர்" },
+  "nav": {
+    "dashboard": "டாஷ்போர்டு", "chat": "AI சாட்", "recommend": "பயிர் ஆலோசகர்", "analytics": "ஆவண Q&A",
+    "market": "சந்தை விலைகள்", "calendar": "பயிர் நாட்காட்டி", "irrigation": "பாசனம்", "economics": "பொருளாதாரம்",
+    "records": "பதிவுகள்", "sensors": "சென்சார்கள்", "farm": "பண்ணை சுயவிவரம்", "settings": "அமைப்புகள்"
+  },
+  "common": {
+    "loading": "ஏற்றுகிறது...", "error": "பிழை", "save": "சேமி", "cancel": "ரத்து", "delete": "நீக்கு",
+    "edit": "திருத்து", "add": "சேர்", "search": "தேடு", "filter": "வடிகட்டு", "export": "ஏற்றுமதி",
+    "submit": "சமர்ப்பி", "close": "மூடு", "confirm": "உறுதிப்படுத்து", "yes": "ஆம்", "no": "இல்லை", "back": "மீண்டும்", "next": "அடுத்து", "done": "முடிந்தது"
+  },
+  "dashboard": {
+    "title": "டாஷ்போர்டு", "subtitle": "உங்கள் பண்ணை செயல்பாட்டின் மேலோட்டம்",
+    "totalChats": "மொத்த சாட்கள்", "predictions": "கணிப்புகள்", "uploads": "ஏற்றியவை",
+    "recentActivity": "சமீபத்திய செயல்பாடு", "knowledgeBase": "அறிவு த்", "welcomeMessage": "ஸ்மார்ட்ஃபார்ம் AI க்கு வருக!"
+  },
+  "chat": {
+    "title": "AI உதவியாளர்", "placeholder": "விவசாயம் பற்றி கேளுங்கள்...", "send": "அனுப்பு", "speaking": "பேசுகிறது...", "listening": "கேட்கிறது...",
+    "micOn": "குரல் உள்ளீடு இயக்கு", "micOff": "குரல் உள்ளீடு முடக்கு", "speakerOn": "முன்னதாக படிக்க இயக்கு", "speakerOff": "முன்னதாக படிக்க முடக்கு",
+    "newChat": "புதிய சாட்", "sessionName": "அமர்வு பெயர்", "createSession": "அமர்வு உருவாக்கு", "deleteSession": "அமர்வு நீக்கு",
+    "exportChat": "சாட் ஏற்றுமதி", "generalChat": "பொதுவான சாட்", "docQa": "ஆவண Q&A", "clearHistory": "வரலாறு அழி", "typeOrSpeak": "உங்கள் கேள்வியை தட்டச்சு செய்யுங்கள் அல்லது பேசுங்கள்"
+  },
+  "recommend": {
+    "title": "பயிர் ஆலோசகர்", "subtitle": "உங்கள் நிலைமையின் அடிப்படையில் பயிர் பரிந்துரைகள் பெறுங்கள்",
+    "nitrogen": "நைட்ரஜன் (N)", "phosphorus": "பாஸ்பரஸ் (P)", "potassium": "பொட்டாசியம் (K)",
+    "temperature": "வெப்பநிலை (°C)", "humidity": "ஈரப்பதம் (%)", "ph": "மண் pH", "rainfall": "மழை (mm)",
+    "getRecommendation": "பரிந்துரை பெறு", "recommendedCrop": "பரிந்துரைக்கப்பட்ட பயிர்", "confidence": "நம்பகம்",
+    "reason": "ஏன் இந்த பயிர்", "alternatives": "மாற்று பயிர்கள்", "predictYield": "விளைச்சல் கணிப்பு",
+    "area": "பரப்பு (ஹெக்டேர்)", "fertilizer": "உரம் (kg)", "pesticide": "பூச்சி கொல்லி (kg)",
+    "rainfallAnnual": "ஆண்டு மழை (mm)", "predictedYield": "கணிக்கப்பட்ட விளைச்சல்", "totalProduction": "மொத்த உற்பத்தி"
+  },
+  "analytics": {
+    "title": "ஆவண Q&A", "subtitle": "விவசாய வழிகாட்டிகளை ஏற்றி கேள்விகள் கேட்கவும்",
+    "uploadDoc": "ஆவணம் ஏற்று", "dragDrop": "PDF அல்லது TXT கோப்பை இங்கே இழுக்கவும்",
+    "orBrowse": "அல்லது கோப்பை உலாவவும்", "indexedChunks": "குறியிடப்பட்ட துண்டுகள்", "askQuestion": "கேள்வி கேட்க",
+    "question": "உங்கள் கேள்வி", "getAnswer": "பதில் பெறு", "sources": "ஆதாரங்கள்", "noDocs": "இன்னும் ஆவணங்கள் ஏற்றப்படவில்லை", "resetIndex": "குறியீடு மீட்டமை"
+  },
+  "market": {
+    "title": "சந்தை விலைகள்", "subtitle": "சந்தைகளில் சமீபத்திய விலைகள்", "crop": "பயிர்", "wholesale": " மொத்த", "retail": "சில்லறை",
+    "farmGate": "பண்ணை வாயில்", "filterCrop": "பயிர் வடிகட்டு", "allCrops": "அனைத்து பயிர்கள்", "pricePerKg": "கிலோ விலை"
+  },
+  "calendar": {
+    "title": "பயிர் நாட்காட்டி", "subtitle": " நடவு மற்றும் அறுவடை திட்டம்", "planting": "நடவு", "harvesting": "அறுவடை", "growing": "வளரும்", "offSeason": "ஓff season", "duration": "காலம்", "climateZone": "தட்ப வெப்ப மண்டலம்"
+  },
+  "irrigation": {
+    "title": "பாசன ஆலோசகர்", "subtitle": "நீர் மேலாண்மை பரிந்துரைகள்", "soilMoisture": "மண் ஈரப்பதம் (%)",
+    "crop": "பயிர் வகை", "temperature": "வெப்பநிலை (°C)", "humidity": "ஈரப்பதம் (%)",
+    "getAdvice": "ஆலோசனை பெறு", "recommendedAction": "பரிந்துரைக்கப்பட்ட நடவடிக்கை", "urgency": "அவசரம்",
+    "urgencyHigh": "உயர்", "urgencyMedium": "மிதமான", "urgencyLow": "குறை", "irrigationLogs": "பாசன பதிவுகள்", "waterVolume": "தண்ணீர் அளவு"
+  },
+  "economics": {
+    "title": "இலாப கணிப்பான்", "subtitle": "உங்கள் விவசாய margin கணக்கிடுங்கள்", "cropType": "பயிர் வகை", "areaHa": "பரப்பு (ஹெக்டேர்)",
+    "fertilizerCost": "உர செலவு", "pesticideCost": "பூச்சி கொல்லி செலவு", "laborCost": "தொழிலாளி செலவு",
+    "expectedYield": "எதிர் பார்க்கும் விளைச்சல் (kg)", "pricePerKg": "கிலோ விலை", "calculate": "கணக்கிடு",
+    "totalCost": "மொத்த செலவு", "totalRevenue": "மொத்த வருவாய்", "profitMargin": "இலாப margin", "costBreakdown": "செலவு பிரிப்பு"
+  },
+  "records": {
+    "title": "விளைச்சல் பதிவுகள்", "subtitle": "உங்கள் அறுவடை வரலாற்றைக் கண்காணிக்கவும்", "addRecord": "பதிவு சேர்",
+    "crop": "பயிர்", "year": "ஆண்டு", "yieldKgHa": "விளைச்சல் (kg/ha)", "areaHa": "பரப்பு (ha)",
+    "notes": "குறிப்புகள்", "saveRecord": "பதிவு சேமி", "harvestHistory": "அறுவடை வரலாறு", "trendChart": "விளைச்சல் போக்கு"
+  },
+  "sensors": {
+    "title": "சென்சார் டாஷ்போர்டு", "subtitle": "IoT சென்சார் வாசிப்புகள் மற்றும் எச்சரிக்கைகள்", "webhookUrl": "Webhook URL",
+    "copyUrl": "URL நகல்", "sendReading": "வாசிப்பு அனுப்பு", "sensorType": "சென்சார் வகை", "value": "மதிப்பு",
+    "unit": "அலகு", "timestamp": "நேர முத்திரை", "recommendedAction": "பரிந்துரைக்கப்பட்ட நடவடிக்கை", "recentReadings": "சமீபத்திய வாசிப்புகள்"
+  },
+  "farm": {
+    "title": "பண்ணை சுயவிவரம்", "subtitle": "உங்கள் பண்ணை தகவலை நிர்வகிக்கவும்", "farmName": "பண்ணை பெயர்",
+    "location": "இடம்", "soilType": "மண் வகை", "acreage": "பரப்பு", "cropsGrown": "விளக்கும் பயிர்கள்",
+    "createProfile": "சுயவிவரம் உருவாக்கு", "updateProfile": "சுயவிவரம் புதுப்பி", "deleteProfile": "சுயவிவரம் நீக்கு"
+  },
+  "settings": {
+    "title": "அமைப்புகள்", "subtitle": "கட்டமைப்பு மற்றும் நிலை", "backendUrl": "Backend URL", "llmModel": "LLM மாதிரி",
+    "apiKeyStatus": "API விசை நிலை", "configured": "கட்டமைக்கப்பட்ட", "notConfigured": "கட்டமைக்கப்படவில்லை",
+    "ragStatus": "RAG நிலை", "mlModels": "ML மாதிரிகள்", "storagePaths": "சேமிப்பு பாதைகள்", "usageStats": "பயன்பாடு புள்ளிவிவரங்கள்",
+    "resetRagIndex": "RAG குறியீடு மீட்டமை", "clearChatHistory": "சாட் வரலாறு அழி"
+  },
+  "landing": {
+    "heroTitle": "ஸ்மார்ட்ஃபார்ம் AI", "heroSubtitle": "உங்கள் நுட்பமான விவசாய சகாப்தம்", "getStarted": "தொடங்கு", "features": "அம்சங்கள்",
+    "aiChat": "AI-இயக்கும் சாட் உதவியாளர்", "cropAdvisor": "நுட்பமான பயிர் பரிந்துரைகள்", "yieldPrediction": "துல்லியமான விளைச்சல் கணிப்புகள்",
+    "documentQA": "RAG உடன் ஆவண Q&A", "marketPrices": "நிகழ் நேர சந்தை விலைகள்", "irrigationAdvice": "நுட்பமான பாசன மேலாண்மை"
+  },
+  "voice": {
+    "tapToSpeak": "பேச தட்டவும்", "speaking": "பேசுகிறது...", "listening": "கேட்கிறது...", "micError": "மைக்ரோஃபோன் அணுகல் மறுக்கப்பட்டது", "speechNotSupported": "இந்த உலாவியில் பேச்சு சாத்தியமில்லை"
+  }
+}
