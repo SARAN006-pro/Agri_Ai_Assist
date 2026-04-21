@@ -49,8 +49,8 @@ class _Row:
 class _SqliteDB:
     __slots__ = ("_conn",)
     def __init__(self, conn: SqliteConn): self._conn = conn
-    async def execute(self, sql: str, params=()):
-        return await self._conn.execute(sql, params)
+    def execute(self, sql: str, params=()):
+        return self._conn.execute(sql, params)
     async def commit(self): await self._conn.commit()
     async def close(self): await self._conn.close()
 
