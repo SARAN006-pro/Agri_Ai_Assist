@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Globe, Cpu, Layers, Lock, Eye, EyeOff, Server, Brain, ChevronDown, ChevronUp, RefreshCw, Info } from 'lucide-react'
 
 import TopBar from '../components/TopBar'
+import { getApiBaseUrl } from '../services/api'
 
 const APP_CONFIG = [
-  { icon: Server, label: 'Backend URL', value: 'http://localhost:8000', note: 'FastAPI server address' },
   { icon: Brain, label: 'LLM Model', value: 'nvidia/nemotron-3-super-120b-a12b:free', note: 'Model used for chat and RAG' },
   { icon: Layers, label: 'Chunk size', value: '500 characters', note: 'RAG document chunking size' },
   { icon: Globe, label: 'Top-K chunks', value: '3', note: 'Chunks retrieved per query' },
@@ -96,6 +96,7 @@ function AccordionSection({ icon: Icon, iconBg, iconColor, title, subtitle, chil
 export default function Settings() {
   const [apiKeyVisible, setApiKeyVisible] = useState(false)
   const [savedMsg, setSavedMsg] = useState('')
+  const backendUrl = getApiBaseUrl()
 
   const handleSave = () => {
     setSavedMsg('Settings saved!')
@@ -112,6 +113,7 @@ export default function Settings() {
           <h2 className="section-title mb-1">Application Configuration</h2>
           <p className="section-subtitle mb-4">Server-side settings for the SmartFarm AI backend</p>
           <div className="flex flex-col gap-3">
+            <ConfigRow icon={Server} label="Backend URL" value={backendUrl} note="Resolved from VITE_API_URL" />
             {APP_CONFIG.map((item) => (
               <ConfigRow key={item.label} {...item} />
             ))}

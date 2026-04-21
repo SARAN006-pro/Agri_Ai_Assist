@@ -1,7 +1,7 @@
 import { Radio, Wifi, Copy, CheckCircle, AlertTriangle, Droplets, Thermometer, CloudRain, Activity } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import TopBar from '../components/TopBar'
-import { getSensorReadings, getWebhookUrl, sendSensorData } from '../services/api'
+import { getApiBaseUrl, getSensorReadings, getWebhookUrl, sendSensorData } from '../services/api'
 
 const SENSOR_TYPES = ['soil_moisture', 'temperature', 'humidity', 'rainfall', 'soil_ph']
 const SENSOR_ICONS = {
@@ -43,6 +43,7 @@ function isOutOfRange(type, value) {
 }
 
 export default function Sensors() {
+  const apiBaseUrl = getApiBaseUrl()
   const [readings, setReadings] = useState([])
   const [loading, setLoading] = useState(true)
   const [webhookUrl, setWebhookUrl] = useState('')
@@ -116,7 +117,7 @@ export default function Sensors() {
               className="flex-1 text-sm font-mono px-4 py-3 rounded-xl break-all"
               style={{ background: 'var(--color-surface-2)', border: '1px solid var(--color-border)', color: 'var(--color-primary)' }}
             >
-              {webhookUrl || 'https://your-backend-url/api/sensors/data'}
+              {webhookUrl || `${apiBaseUrl}/sensors/data`}
             </code>
             <button onClick={copyWebhook} className="btn btn-primary btn-icon flex-shrink-0">
               {copied ? <CheckCircle size={16} /> : <Copy size={16} />}

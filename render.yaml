@@ -11,4 +11,4 @@ services:
       - key: MODEL_NAME
         value: mistralai/mistral-7b-instruct
       - key: FRONTEND_URL
-        value: https://smartfarm-ai-assist.netlify.app
+        value: https://agriintel-ai.netlify.app

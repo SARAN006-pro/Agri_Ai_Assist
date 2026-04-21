@@ -40,7 +40,7 @@ The server starts at **http://localhost:8000**. API docs are at **http://localho
 
 In development, the Vite proxy (`/api` → `http://localhost:8000`) handles routing automatically.
 
-For production, set the `VITE_API_BASE_URL` environment variable in your frontend build to your deployed backend URL (e.g. `https://smartfarm-api.onrender.com`).
+For production, set the `VITE_API_URL` environment variable in your frontend build to your deployed backend URL (e.g. `https://ai-farm-assist-js7f.onrender.com`).
 
 ## Environment Variables
 

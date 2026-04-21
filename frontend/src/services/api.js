@@ -1,12 +1,35 @@
 import axios from 'axios'
 
+const normalizeApiBaseUrl = (value) => {
+  if (!value) return '/api'
+
+  const trimmed = value.trim().replace(/\/+$/, '')
+  return trimmed.endsWith('/api') ? trimmed : `${trimmed}/api`
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL
-    ? `${import.meta.env.VITE_API_BASE_URL}/api`
-    : '/api',
+  baseURL: normalizeApiBaseUrl(import.meta.env.VITE_API_URL),
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' },
 })
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    const detail = error?.response?.data?.detail
+    if (detail) {
+      error.message = detail
+    } else if (error?.code === 'ECONNABORTED') {
+      error.message = 'Request timed out. Please try again.'
+    } else if (!error?.response) {
+      error.message = 'Unable to reach the backend. Check the API URL and network connection.'
+    }
+
+    return Promise.reject(error)
+  }
+)
+
+export const getApiBaseUrl = () => api.defaults.baseURL
 
 export const sendChat = (message, sessionId, history, language, deviceId) =>
   api.post('/chat', { message, session_id: sessionId, history, language, device_id: deviceId })

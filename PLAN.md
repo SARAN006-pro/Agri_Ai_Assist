@@ -62,6 +62,7 @@ backend/
 ## 3. Implementation Steps
 
 ### Step 1 — Project scaffolding
+
 - Create `requirements.txt` with minimal deps: `fastapi`, `uvicorn[standard]`, `aiosqlite`, `python-multipart`, `openrouter-python`, `httpx`
 - Create `config.py` — env var loading with Pydantic settings
 - Create `database.py` — async SQLite init with `aiosqlite`
@@ -69,9 +70,11 @@ backend/
 - Create `app/routes/__init__.py`
 
 ### Step 2 — Core routes (all 40+ endpoints)
+
 Implement each route group as a separate router file:
 
 **Chat** (`chat.py`):
+
 - `POST /chat` → OpenRouter AI reply, store in session history
 - `GET /chat/history/{session_id}` → return message array
 - `GET /chat/sessions` → list sessions
@@ -82,21 +85,25 @@ Implement each route group as a separate router file:
 - `GET /chat/context/{session_id}?device_id=` → adaptive learning context
 
 **RAG** (`rag.py`):
+
 - `POST /rag/upload` → save file, chunk, store embeddings (simple file-based vector store)
 - `POST /rag/query` → semantic search + OpenRouter answer synthesis
 - `GET /rag/stats` → document/chunk counts
 
 **Predict** (`predict.py`):
+
 - `POST /predict/crop` → rule-based + simple sklearn model
 - `POST /predict/yield` → formula-based yield estimation
 - `GET /predict/crops/list` → static crop list
 
 **Stats** (`stats.py`):
+
 - `GET /stats` → total counts
 - `GET /stats/history` → 7-day activity
 - `GET /stats/breakdown` → event type breakdown
 
 **Settings** (`settings.py`):
+
 - `GET /settings` → app config
 - `POST /settings/reset-index`
 - `POST /settings/clear-history`
@@ -112,6 +119,7 @@ Implement each route group as a separate router file:
 **Profile** (`profile.py`): `/feedback`, `/correction`, `/crop-outcome`, `/profile/{deviceId}/*`
 
 ### Step 3 — Services layer
+
 - `chat_service.py` — OpenRouter API call, session management, prompt construction
 - `rag_service.py` — File chunking (simple text split), file-based "vector store" (no heavy FAISS), query-time search
 - `ml_service.py` — Crop recommendation (pre-trained sklearn model, <1MB), yield prediction formula
@@ -120,7 +128,9 @@ Implement each route group as a separate router file:
 - `calendar_service.py` — static crop calendar data
 
 ### Step 4 — Database schema
+
 SQLite tables:
+
 - `chat_sessions` (id, session_id, name, created_at)
 - `chat_messages` (id, session_id, role, content, created_at)
 - `farm_profiles` (id, name, location, soil_type, acreage, crops_grown, created_at)
@@ -134,6 +144,7 @@ SQLite tables:
 - `stats_daily` (date PRIMARY KEY, chats, predictions, uploads)
 
 ### Step 5 — Production config
+
 - `render.yaml` — Render deployment config
 - `Dockerfile` — Python slim image
 - `.env.example` — all required vars documented
@@ -158,14 +169,14 @@ SQLite tables:
 2. Connect repo to Render (or use existing deploy repo from memory: `Agri_Ai_Assist`)
 3. Set env vars (`OPENROUTER_API_KEY`, etc.)
 4. Deploy — Render auto-detects FastAPI from `main.py`
-5. Set `VITE_API_BASE_URL` in frontend env to the Render URL
+5. Set `VITE_API_URL` in frontend env to the Render URL
 6. Build and deploy frontend
 
 ---
 
 ## 6. Frontend Integration Notes
 
-- `VITE_API_BASE_URL` must be set in frontend production build to backend URL
+- `VITE_API_URL` must be set in frontend production build to backend URL
 - No code changes needed in frontend
 - All 40+ endpoints must return exact shapes the frontend expects (documented in API analysis)
 - Chat endpoint calls OpenRouter — requires valid `OPENROUTER_API_KEY`
