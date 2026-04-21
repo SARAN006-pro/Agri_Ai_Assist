@@ -1,0 +1,23 @@
+# Supabase CLI configuration
+[project]
+project_id = "smartfarm-ai"
+
+# Edge Functions
+[functions.api]
+verify_jwt = false
+preserve_response_files = false
+```
+
+# Postgres database - Supabase managed
+[db]
+port = 5432
+host = "${POSTGRES_HOST}"
+user = "${POSTGRES_USER}"
+password = "${POSTGRES_PASSWORD}"
+database = "postgres"
+shadow_port = 54320
+
+# Database migrations directory
+[db.migrations]
+enabled = true
+path = "supabase/migrations"
