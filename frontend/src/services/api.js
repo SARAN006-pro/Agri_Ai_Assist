@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+const DEFAULT_API_URL = 'https://ai-farm-assist-js7f.onrender.com'
+
 const normalizeApiBaseUrl = (value) => {
-  if (!value) return '/api'
+  if (!value) return `${DEFAULT_API_URL}/api`
 
   const trimmed = value.trim().replace(/\/+$/, '')
   return trimmed.endsWith('/api') ? trimmed : `${trimmed}/api`
@@ -28,6 +30,14 @@ api.interceptors.response.use(
     return Promise.reject(error)
   }
 )
+
+api.interceptors.request.use((config) => {
+  if (import.meta.env.DEV) {
+    const requestUrl = `${config.baseURL || ''}${config.url || ''}`
+    console.log('[API request]', (config.method || 'get').toUpperCase(), requestUrl)
+  }
+  return config
+})
 
 export const getApiBaseUrl = () => api.defaults.baseURL
 
@@ -110,8 +120,14 @@ export const getWebhookUrl = () => api.get('/sensors/webhook-url')
 export const sendSensorData = (data) => api.post('/sensors/data', data)
 
 // Translation
-export const translateText = (data) => api.post('/translate', data)
-export const detectLanguage = (data) => api.post('/detect-language', data)
+export const translateText = (data) => api.post('/translate', {
+  text: data?.text,
+  source_language: data?.source_language ?? data?.source_lang,
+  target_language: data?.target_language ?? data?.target_lang,
+})
+export const detectLanguage = (data) => api.post('/detect-language', {
+  text: data?.text,
+})
 export const getSupportedLanguages = () => api.get('/languages')
 
 // Adaptive Learning

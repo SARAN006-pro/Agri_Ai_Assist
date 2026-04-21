@@ -24,8 +24,10 @@ LANGUAGES = [
 
 class TranslateRequest(BaseModel):
     text: str
-    target_language: str
+    target_language: str | None = None
+    target_lang: str | None = None
     source_language: str | None = None
+    source_lang: str | None = None
 
 
 class DetectRequest(BaseModel):
@@ -37,17 +39,21 @@ async def translate(req: TranslateRequest):
     if not req.text.strip():
         raise HTTPException(status_code=400, detail="'text' is required.")
 
+    target_language = req.target_language or req.target_lang
+    if not target_language:
+        raise HTTPException(status_code=400, detail="'target_language' is required.")
+
     messages = [
         {
             "role": "system",
-            "content": f"Translate the following text to {req.target_language}. "
+            "content": f"Translate the following text to {target_language}. "
                        "Output ONLY the translation, no explanation.",
         },
         {"role": "user", "content": req.text},
     ]
 
     if not OPENROUTER_API_KEY:
-        return {"translated_text": req.text + f" [to {req.target_language}]"}
+        return {"translated_text": req.text + f" [to {target_language}]"}
 
     try:
         async with httpx.AsyncClient(timeout=30) as client:
@@ -89,7 +95,7 @@ async def detect_language(req: DetectRequest):
     }
     best = max(lang_scores, key=lang_scores.get) if any(lang_scores.values()) else "en"
     confidence = min(lang_scores.get(best, 0) / max(len(text), 1) + 0.3, 1.0)
-    return {"language": best, "confidence": round(confidence, 2)}
+    return {"language": best, "detected_lang": best, "confidence": round(confidence, 2)}
 
 
 @router.get("/languages")
